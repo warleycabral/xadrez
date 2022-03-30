@@ -1,5 +1,6 @@
 ﻿using System;
-using Xadrez.Tabuleiro;
+using Xadrez;
+using Xadrez.Chess;
 
 namespace xadrez
 {
@@ -7,8 +8,9 @@ namespace xadrez
     {
         static void Main(string[] args)
         {
-            Tabuleiro tabuleiro = new Tabuleiro(8,8);
-            Console.WriteLine("Hello World!");
+            Board tabuleiro = new Board(8,8);
+            Screen.PrintBoard(tabuleiro);
+            
         }
     }
 }
