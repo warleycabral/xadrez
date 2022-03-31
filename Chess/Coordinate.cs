@@ -8,19 +8,19 @@ namespace Xadrez.Chess
 {
     class Coordinate
     {
-        public int Linha { get; set; }
-        public int Coluna { get; set; }
+        public int Line { get; set; }
+        public int Column { get; set; }
 
-        public Coordinate(int linha, int coluna)
+        public Coordinate(int line, int column)
         {
-            Linha = linha;
-            Coluna = coluna;
+            Line = line;
+            Column = column;
         }
         public override string ToString()
         {
-            return Linha 
+            return Line 
                 + ", " 
-                + Coluna;
+                + Column;
         }
     }
 }

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xadrez.Chess.Enums;
+﻿using Xadrez.Chess.Enums;
 
-namespace Xadrez.Chess
+namespace Xadrez.Chess.Pieces
 {
     class Piece
     {
@@ -14,9 +9,9 @@ namespace Xadrez.Chess
         public int Moves { get; protected set; }
         public Board Board { get; protected set; }
 
-        public Piece(Coordinate coordinate, Color color, Board board)
+        public Piece(Color color, Board board)
         {
-            Coordinate = coordinate;
+            Coordinate = null;
             Color = color;
             Board = board;
             Moves = 0;

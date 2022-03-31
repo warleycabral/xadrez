@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xadrez.Chess;
+﻿using Xadrez.Chess.Pieces;
 
 namespace Xadrez.Chess
 {
@@ -23,6 +18,11 @@ namespace Xadrez.Chess
         public Piece Piece(int line, int column)
         {
             return pieces[line, column];
+        }
+        public void PutPiece(Piece p, Coordinate coordinate)
+        {
+            pieces[coordinate.Line, coordinate.Column] = p;
+            p.Coordinate = coordinate;
         }
     }
 }
