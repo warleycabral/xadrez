@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Xadrez.Tabuleiro
+namespace Xadrez.Chess
 {
-    class Posicao
+    class Coordinate
     {
         public int Linha { get; set; }
         public int Coluna { get; set; }
 
-        public Posicao(int linha, int coluna)
+        public Coordinate(int linha, int coluna)
         {
             Linha = linha;
             Coluna = coluna;
